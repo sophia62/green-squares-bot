@@ -94,9 +94,10 @@ if len(week_commits) == 0:
         json.dump(data, f)
 
 # ❌ Skip if today is not one of the selected commit days
-if weekday not in week_commits:
-    print(f"🛌 {now.strftime('%A')} not selected for this week. Skipping commits.")
-    exit()
+# Temp Test
+# if weekday not in week_commits:
+#     print(f"🛌 {now.strftime('%A')} not selected for this week. Skipping commits.")
+#     exit()
 
 # Daily count
 done = data.get(date_key, 0)
